@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author Israel Block
  *
  */
-public class Trem {
+public class Trem extends Veiculo {
 
 	/**
 	 * 
@@ -31,9 +31,12 @@ public class Trem {
 	 * @param nomeDoTrem
 	 * @param listaVagoes
 	 */
-	public Trem(String nomeDoTrem, ArrayList<Vagao> listaVagoes){
+	public Trem(String nomeDoTrem, ArrayList<Vagao> listaVagoes, int ano, String cor){
+		super();
 		setNomeDoTrem(nomeDoTrem);
 		setListaVagoes(listaVagoes);
+		setAno(ano);
+		setCor(cor);
 	}
 	
 	/**

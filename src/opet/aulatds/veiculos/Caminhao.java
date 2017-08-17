@@ -5,27 +5,7 @@ package opet.aulatds.veiculos;
  * @author Israel Block
  *
  */
-public class Caminhao {
-	
-	/**
-	 * 
-	 */
-	private String cor;
-	
-	/**
-	 * 
-	 */
-	private int ano;
-	
-	/**
-	 * 
-	 */
-	private String marca;
-	
-	/**
-	 * 
-	 */
-	private String fabricante;
+public class Caminhao extends Automovel {
 	
 	/**
 	 * 
@@ -36,11 +16,11 @@ public class Caminhao {
 	 * 
 	 */
 	public Caminhao() {
-		setCor(cor);
-		setAno(ano);
-		setMarca(marca);
-		setFabricante(fabricante);
-		setTara(tara);
+		setCor("Não definida");
+		setAno(0000);
+		setMarca("Não definida");
+		setFabricante("Não definido");
+		setTara(0);
 	}
 	
 	/**
@@ -52,72 +32,13 @@ public class Caminhao {
 	 * @param tara
 	 */
 	public Caminhao(String cor, int ano, String marca, String fabricante, double tara) {
-		
+		setCor(cor);
+		setAno(ano);
+		setMarca(marca);
+		setFabricante(fabricante);
+		setTara(tara);
 	}
 
-	/**
-	 * 
-	 * @return
-	 */
-	public String getCor() {
-		return cor;
-	}
-
-	/**
-	 * 
-	 * @param cor
-	 */
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
-
-	/**
-	 * 
-	 * @return
-	 */
-	public int getAno() {
-		return ano;
-	}
-
-	/**
-	 * 
-	 * @param ano
-	 */
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
-
-	/**
-	 * 
-	 * @return
-	 */
-	public String getMarca() {
-		return marca;
-	}
-
-	/**
-	 * 
-	 * @param marca
-	 */
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
-	/**
-	 * 
-	 * @return
-	 */
-	public String getFabricante() {
-		return fabricante;
-	}
-
-	/**
-	 * 
-	 * @param fabricante
-	 */
-	public void setFabricante(String fabricante) {
-		this.fabricante = fabricante;
-	}
 
 	/**
 	 * 
